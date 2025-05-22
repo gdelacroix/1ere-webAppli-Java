@@ -113,5 +113,35 @@ mvn clean package
 
     - http://localhost:8080/MyWebApp/index.html
 
+## 🚀 Lancer l'application localement avec Maven + Jetty
+
+### Étapes
+
+1. Ouvrir un terminal dans le dossier racine du projet.
+2. Lancer Jetty avec la commande suivante :
+
+   ```bash
+   mvn jetty:run
+   ```
+Une fois Jetty démarré, accéder à l'application dans votre navigateur à l'adresse suivante :
+
+```arduino
+http://localhost:8080/MyWebApp
+```
+Remplacez MyWebApp par le nom réel de votre projet s'il est différent.
+
+## 🔧 Problèmes fréquents
+Erreur NoClassDefFoundError: javax/servlet/http/HttpServlet
+Vérifiez que la dépendance jakarta.servlet-api est bien ajoutée à votre pom.xml :
+
+```xml
+<dependency>
+    <groupId>jakarta.servlet</groupId>
+    <artifactId>jakarta.servlet-api</artifactId>
+    <version>5.0.0</version>
+    <scope>provided</scope>
+</dependency>
+```
+
 ## 📘 Licence
 Ce projet est libre d'utilisation à des fins pédagogiques.
