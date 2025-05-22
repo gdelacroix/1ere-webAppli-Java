@@ -128,11 +128,11 @@ Une fois Jetty démarré, accéder à l'application dans votre navigateur à l'a
 ```arduino
 http://localhost:8080/MyWebApp
 ```
-Remplacez MyWebApp par le nom réel de votre projet s'il est différent.
+Remplacez `MyWebApp` par le nom réel de votre projet s'il est différent.
 
 ## 🔧 Problèmes fréquents
-Erreur NoClassDefFoundError: javax/servlet/http/HttpServlet
-Vérifiez que la dépendance jakarta.servlet-api est bien ajoutée à votre pom.xml :
+Erreur `NoClassDefFoundError: javax/servlet/http/HttpServlet`
+Vérifiez que la dépendance `jakarta.servlet-api` est bien ajoutée à votre `pom.xml` :
 
 ```xml
 <dependency>
